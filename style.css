@@ -351,8 +351,7 @@ body {
   "body"
   "footer";
   grid-template-columns: 1fr;
-  width: 60%;
-  margin: 10% auto;
+  width: 100%;
   border: solid 1px var(--neon-blue);
   background-color: var(--eggplant);
 }
@@ -381,8 +380,9 @@ body {
   grid-area: body;
   display: grid;
   grid-template-areas:
-  "photo  info";
-  grid-template-columns: 2fr 3fr;
+  "photo"
+  "info";
+  grid-template-columns: 1fr;
   justify-content: start;
 }
 
@@ -395,6 +395,7 @@ body {
 
 .modal-photo {
   grid-area: photo;
+  text-align: center;
 }
 
 .modal-mug {
@@ -543,5 +544,20 @@ body {
   .address {
     width: 266px;
     font-size: 16px;
+  }
+
+  .modal {
+    width: 60%;
+    margin: 10% auto;
+  }
+
+  .modal-body {
+    grid-template-areas:
+    "photo  info";
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .modal-photo {
+    text-align: left;
   }
 }
