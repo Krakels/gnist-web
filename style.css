@@ -322,6 +322,144 @@ body {
   right: 0px;
 }
 
+/* Modal styles */
+
+#modal {
+  display: none;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.51);
+}
+
+.modal {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "body"
+  "footer";
+  grid-template-columns: 1fr;
+  width: 60%;
+  margin: 10% auto;
+  border: solid 1px var(--neon-blue);
+  background-color: var(--eggplant);
+}
+
+.modal-header {
+  grid-area: header;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close {
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0px 30px;
+  font-family: "Roboto Mono";
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px 20px 30px 20px;
+  grid-area: body;
+  display: grid;
+  grid-template-areas:
+  "photo  info";
+  grid-template-columns: 2fr 3fr;
+  justify-content: start;
+}
+
+.modal-footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.modal-photo {
+  grid-area: photo;
+}
+
+.modal-mug {
+  width: 90%;
+}
+
+.modal-title {
+  grid-area: title;
+  font-family: "Roboto Mono";
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.modal-speaker {
+  grid-area: speaker;
+  font-family: "Roboto Mono";
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--dull-yellow);
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.modal-description {
+  grid-area: description;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 20px;
+}
+
+.modal-time {
+  grid-area: time;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dull-yellow);
+  margin-top: 20px;
+}
+
+.next-v {
+  margin-left: 10px;
+  float: right;
+  transform: rotate(-90deg);
+}
+
+
+
+
 @media screen and (min-width: 755px) {
   #container {
     grid-template-columns: 1fr 740px 1fr;
