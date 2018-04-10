@@ -13,6 +13,7 @@
 
 body {
   background-image: linear-gradient(124deg, var(--sapphire), var(--lavender-pink));
+  margin: 0;
 }
 
 /* Layout styles */
