@@ -337,13 +337,13 @@ body {
 }
 
 .modal-container {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 50; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgba(255, 255, 255, 0.51);
 }
 
@@ -454,6 +454,14 @@ body {
   letter-spacing: normal;
   color: var(--dull-yellow);
   margin-top: 20px;
+}
+
+.modal-description-start {
+  color: var(--dark-hot-pink);
+}
+
+.modal-description-end {
+  color: var(--liliac);
 }
 
 .next-v {
