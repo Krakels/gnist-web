@@ -194,7 +194,7 @@ body {
 }
 
 .signup-button {
-  padding: 20px 40px;
+  padding: 20px 80px;
   border-radius: 100px;
   background-color: #ffffff;
   box-shadow: 1px 2px 7px 1px rgba(88, 55, 185, 0.42);
@@ -517,8 +517,8 @@ body {
   }
 
   .signup-button {
-    font-size: 15px;
-    padding: 20px 30px;
+    font-size: 20px;
+    padding: 20px 50px;
     margin-top: 50px;
   }
 
