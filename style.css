@@ -385,7 +385,8 @@ body {
   display: grid;
   grid-template-areas:
   "photo"
-  "info";
+  "info"
+  "video";
   grid-template-columns: 1fr;
   justify-content: start;
 }
@@ -454,6 +455,24 @@ body {
   letter-spacing: normal;
   color: var(--dull-yellow);
   margin-top: 20px;
+}
+
+.modal-video {
+  grid-area: video;
+  margin-top: 20px;
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+}
+
+.modal-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 97%;
+  height: 97%;
+  padding: 10px;
 }
 
 .modal-description-start {
@@ -565,7 +584,8 @@ body {
 
   .modal-body {
     grid-template-areas:
-    "photo  info";
+    "photo  info"
+    "video video";
     grid-template-columns: 2fr 3fr;
   }
 
